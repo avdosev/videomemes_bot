@@ -1,2 +1,2 @@
 git pull
-systemctl restart bot.service
+systemctl restart videomemes_bot
