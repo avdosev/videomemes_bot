@@ -1,0 +1,15 @@
+[Unit]
+Description=CallBot
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=avdosev
+WorkingDirectory=/home/avdosev/videomemes_bot
+ExecStart=/usr/bin/python3 /home/avdosev/videomemes_bot/main.py
+RestartSec=10
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
